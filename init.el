@@ -40,6 +40,8 @@
 
 (setq-default tab-width 4)
 (setq show-trailing-whitespaces t)
+(setq-default speedbar-show-unknown-files t)
+(setq speedbar-directory-unshown-regexp "^$")
 
 ;; Backups
 (setq
