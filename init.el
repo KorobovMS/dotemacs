@@ -40,6 +40,15 @@
 
 (setq-default tab-width 4)
 
+;; Backups
+(setq
+   backup-by-copying t
+   backup-directory-alist '(("." . "~/.backupemacs/"))
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control t)
+
 (custom-set-faces
  '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
 
