@@ -1,10 +1,13 @@
-;; Mouse speed
-(setq mouse-wheel-progressive-speed nil)
-(setq mouse-wheel-scroll-amount '(2))
 
 ;; UI
 (tool-bar-mode -1)
 (setq default-cursor-type 'bar)
+(setq inhibit-startup-message t)
+(global-hl-line-mode t)
+(global-display-line-numbers-mode)
+(setq column-number-mode t)
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-scroll-amount '(3))
 
 (setq-default tab-width 4)
 
