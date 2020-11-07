@@ -1,3 +1,27 @@
+;; Packages
+(require 'package)
+(add-to-list 'package-archives (cons "melpa" "https://melpa.org/packages/") t)
+(package-initialize)
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+(require 'use-package)
+
+(use-package projectile
+  :ensure t
+  :config
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (projectile-mode +1))
+
+(use-package move-text
+  :bind (("C-S-<up>" . move-text-up)
+		 ("C-S-<down>" . move-text-down))
+  :ensure t)
+
+(use-package markdown-mode
+  :ensure t)
+
+(use-package rust-mode
+  :ensure t)
 
 ;; UI
 (tool-bar-mode -1)
