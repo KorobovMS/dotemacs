@@ -23,6 +23,11 @@
 (use-package rust-mode
   :ensure t)
 
+(require 'ido)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode +1)
+
 ;; UI
 (tool-bar-mode -1)
 (setq default-cursor-type 'bar)
