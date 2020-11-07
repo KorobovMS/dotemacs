@@ -39,6 +39,7 @@
 (setq mouse-wheel-scroll-amount '(3))
 
 (setq-default tab-width 4)
+(setq show-trailing-whitespaces t)
 
 ;; Backups
 (setq
@@ -50,7 +51,13 @@
    version-control t)
 
 (custom-set-faces
- '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (
+				:family "DejaVu Sans Mono"
+				:foundry "unknown"
+				:slant normal
+				:weight normal
+				:height 120
+				:width normal)))))
 
 
 (defun reverse-input-method (input-method)
