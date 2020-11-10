@@ -94,3 +94,5 @@
 
 ;; Hotkeys on russian layout
 (reverse-input-method 'russian-computer)
+
+(server-start)
