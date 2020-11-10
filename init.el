@@ -23,6 +23,7 @@
 (use-package rust-mode
   :ensure t)
 
+;; IDO setup
 (require 'ido)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
