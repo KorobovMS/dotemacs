@@ -43,6 +43,7 @@
 (setq column-number-mode t)
 (setq mouse-wheel-progressive-speed nil)
 (setq mouse-wheel-scroll-amount '(3))
+(setq scroll-conservatively 10000)
 
 (setq-default tab-width 8)
 (setq show-trailing-whitespaces t)
