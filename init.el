@@ -29,6 +29,11 @@
 (setq ido-everywhere t)
 (ido-mode +1)
 
+;; Dired setup
+(defun always-hide-info-in-dired ()
+  (dired-hide-details-mode 1))
+(add-hook 'dired-mode-hook 'always-hide-info-in-dired)
+
 ;; UI
 (tool-bar-mode -1)
 (setq default-cursor-type 'bar)
