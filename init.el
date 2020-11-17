@@ -72,6 +72,8 @@
 				:height 120
 				:width normal)))))
 
+(custom-set-variables
+ '(custom-enabled-themes '(tango)))
 
 (defun reverse-input-method (input-method)
   "Build the reverse mapping of single letters from INPUT-METHOD."
