@@ -5,7 +5,8 @@
 (package-initialize)
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
-(require 'use-package)
+(eval-when-compile
+  (require 'use-package))
 
 (use-package projectile
   :ensure t
@@ -64,17 +65,9 @@
    kept-old-versions 2
    version-control t)
 
-(custom-set-faces
- '(default ((t (
-				:family "DejaVu Sans Mono"
-				:foundry "unknown"
-				:slant normal
-				:weight normal
-				:height 120
-				:width normal)))))
+(set-frame-font "DejaVu Sans Mono 12" nil t)
 
-(custom-set-variables
- '(custom-enabled-themes '(tango)))
+(load-theme 'tango)
 
 (defun reverse-input-method (input-method)
   "Build the reverse mapping of single letters from INPUT-METHOD."
