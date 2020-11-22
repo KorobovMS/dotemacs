@@ -50,6 +50,10 @@
 (setq mouse-wheel-progressive-speed nil)
 (setq mouse-wheel-scroll-amount '(3))
 (setq scroll-conservatively 10000)
+(set-frame-font "DejaVu Sans Mono 12" nil t)
+(load-theme 'tango)
+(set-face-background 'hl-line "#E0E0E0")
+(set-face-foreground 'highlight nil)
 
 (setq-default tab-width 8)
 (setq show-trailing-whitespaces t)
@@ -64,10 +68,6 @@
    kept-new-versions 6
    kept-old-versions 2
    version-control t)
-
-(set-frame-font "DejaVu Sans Mono 12" nil t)
-
-(load-theme 'tango)
 
 (defun reverse-input-method (input-method)
   "Build the reverse mapping of single letters from INPUT-METHOD."
