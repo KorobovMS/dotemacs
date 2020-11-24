@@ -33,6 +33,9 @@
 	      (when (derived-mode-p 'c-mode 'c++-mode)
 		(ggtags-mode 1)))))
 
+(use-package magit
+  :ensure t)
+
 ;; IDO setup
 (require 'ido)
 (setq ido-enable-flex-matching t)
