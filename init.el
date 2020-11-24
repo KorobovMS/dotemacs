@@ -1,7 +1,6 @@
 ;; Packages
 (require 'package)
 (add-to-list 'package-archives (cons "melpa" "https://melpa.org/packages/") t)
-(setq gc-cons-threshold 50000000)
 (package-initialize)
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
