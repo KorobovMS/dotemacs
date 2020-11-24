@@ -25,6 +25,14 @@
 (use-package rust-mode
   :ensure t)
 
+(use-package ggtags
+  :ensure t
+  :config
+  (add-hook 'c-mode-common-hook
+	    (lambda ()
+	      (when (derived-mode-p 'c-mode 'c++-mode)
+		(ggtags-mode 1)))))
+
 ;; IDO setup
 (require 'ido)
 (setq ido-enable-flex-matching t)
