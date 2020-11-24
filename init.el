@@ -15,8 +15,9 @@
   (projectile-mode +1))
 
 (use-package move-text
-  :bind (("C-S-<up>" . move-text-up)
-		 ("C-S-<down>" . move-text-down))
+  :bind
+  (("C-S-<up>" . move-text-up)
+   ("C-S-<down>" . move-text-down))
   :ensure t)
 
 (use-package markdown-mode
