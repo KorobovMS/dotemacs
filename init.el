@@ -66,6 +66,7 @@
 (load-theme 'tango)
 (set-face-background 'hl-line "#E0E0E0")
 (set-face-foreground 'highlight nil)
+(setq frame-title-format "%f")
 
 (setq-default tab-width 8)
 (setq show-trailing-whitespaces t)
