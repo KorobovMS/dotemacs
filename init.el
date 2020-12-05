@@ -12,6 +12,7 @@
   :ensure t
   :config
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (setq projectile-switch-project-action 'projectile-dired)
   (projectile-mode +1))
 
 (use-package move-text
