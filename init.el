@@ -72,6 +72,8 @@
 (setq-default tab-width 8)
 (setq-default show-trailing-whitespace t)
 (set-face-background 'trailing-whitespace "#DECAFF")
+(add-hook 'buffer-menu-mode-hook
+	  (lambda () (setq show-trailing-whitespace nil)))
 (setq-default speedbar-show-unknown-files t)
 (setq speedbar-directory-unshown-regexp "^$")
 
