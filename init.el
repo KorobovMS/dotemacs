@@ -70,7 +70,8 @@
 (setq frame-title-format "%f")
 
 (setq-default tab-width 8)
-(setq show-trailing-whitespaces t)
+(setq-default show-trailing-whitespace t)
+(set-face-background 'trailing-whitespace "#DECAFF")
 (setq-default speedbar-show-unknown-files t)
 (setq speedbar-directory-unshown-regexp "^$")
 
