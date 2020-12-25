@@ -1,6 +1,7 @@
 ;; Packages
 (require 'package)
 (add-to-list 'package-archives (cons "melpa" "https://melpa.org/packages/") t)
+(setq gc-cons-threshold 100000000)
 (package-initialize)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -113,3 +114,14 @@
 (reverse-input-method 'russian-computer)
 
 (server-start)
+
+(defun my-minibuffer-setup-hook ()
+  (setq gc-cons-threshold 100000000))
+
+(defun my-minibuffer-exit-hook ()
+  (setq gc-cons-threshold 800000))
+
+(add-hook 'minibuffer-setup-hook 'my-minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook 'my-minibuffer-exit-hook)
+
+(setq gc-cons-threshold 800000)
