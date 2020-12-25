@@ -69,6 +69,7 @@
 (set-face-background 'hl-line "#E0E0E0")
 (set-face-foreground 'highlight nil)
 (setq frame-title-format "%f")
+(setq-default isearch-allow-scroll 'unlimited)
 
 (setq-default tab-width 8)
 (setq-default show-trailing-whitespace t)
