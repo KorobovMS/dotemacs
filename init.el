@@ -54,6 +54,9 @@
   (dired-hide-details-mode 1))
 (add-hook 'dired-mode-hook 'always-hide-info-in-dired)
 
+;; Compile mode
+(setq-default compilation-scroll-output t)
+
 ;; UI
 (tool-bar-mode -1)
 (setq default-cursor-type 'bar)
