@@ -63,6 +63,7 @@
 (setq inhibit-startup-message t)
 (global-hl-line-mode t)
 (global-display-line-numbers-mode)
+(toggle-horizontal-scroll-bar 1)
 (setq column-number-mode t)
 (setq mouse-wheel-progressive-speed nil)
 (setq mouse-wheel-scroll-amount '(3))
